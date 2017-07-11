@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">  
+    <script language='javascript'>
+     function suma(){
+      n1=document.getElementById("num").value;
+      n2=document.getElementById("num2").value;
+      res=document.getElementById("demo").value = parseInt(n1)+parseInt(n2);
+      res.setAttribute("type", "number");
+     }
+    </script>
+   </head>
+   <body>
+    <div class="col-md-4">
+      <div class="thumbnail" style="background-color: #6B6B6B">
+        <div class="jumbotron" style="background-color: #6B6B6B">
+          <span id="codeacamp" style="font-size: 28px;">
+            <span style="color: rgb(255, 200, 66); font-family: Ubuntu;">{</span>
+            <span style="color: rgb(255, 200, 66); font-weight:bold;">CODEA</span>
+            <span style="color:#ffffff;">CAMP</span>
+            <span style="color: rgb(255, 200, 66); font-family: Ubuntu;">}</span>
+          </span>
+        </div>
+        <div class="caption">
+          <form name="suma()"=POST class="some">
+            <div class="first">
+              <label name='n1'>Numero 1:</label>
+              <input id="num" type=text name='n1'/>
+            </div>
+            <div>
+              <label name='n2'>Numero 2:</label>
+              <input id="num2" type=text name='n2'/>
+            </div class="second">
+            <div class="button">
+              <input style="border: none; border-radius: 6px; background-color: #5BC0DE" type=button value="   +   " onclick="suma()"/>
+            </div>
+            <div class="results">
+              <input id="demo" name='result'/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
